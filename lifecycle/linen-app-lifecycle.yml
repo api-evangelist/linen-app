@@ -1,0 +1,102 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of linen.app + Internet Archive CDX capture history
+status: discontinued
+summary: >-
+  Linen Wallet (Linen Mobile, Inc.) is no longer operating a public web or developer surface.
+  Every path on linen.app — including the support subdomain and all /.well-known/ paths —
+  returns an HTTP 301 to a single X (Twitter) post. No documentation, API, portal, pricing,
+  terms, privacy or status page resolves. The domain itself is still registered and served
+  through Cloudflare with valid TLS and configured SPF/DMARC records, so the redirect is a
+  deliberate wind-down of the product rather than an expired domain.
+
+wind_down:
+  last_live_homepage_capture: '2023-10-10'
+  redirect_target: https://x.com/GetLinen/status/1719361452186710050
+  redirect_target_posted: '2023-10-31'
+  note: >-
+    The last Internet Archive capture of a live linen.app homepage is 2023-10-10; the X post the
+    domain now redirects to was published 2023-10-31. The content of that post was not retrieved
+    (x.com is not machine-fetchable without authentication), so it is recorded here as the
+    redirect target only, not as a quoted announcement.
+
+probe:
+  date: '2026-07-19'
+  results:
+  - url: https://linen.app/
+    status: 301
+    location: https://x.com/GetLinen/status/1719361452186710050
+  - url: https://support.linen.app/
+    status: 301
+    location: https://x.com/GetLinen/status/1719361452186710050
+  - url: https://linen.app/robots.txt
+    status: 301
+  - url: https://linen.app/llms.txt
+    status: 301
+  dns_resolves:
+  - linen.app
+  - support.linen.app
+  dns_nxdomain:
+  - www.linen.app
+  - docs.linen.app
+  - api.linen.app
+  - app.linen.app
+  - developer.linen.app
+  - developers.linen.app
+  - help.linen.app
+  - blog.linen.app
+  - status.linen.app
+  - trust.linen.app
+  - security.linen.app
+  - learn.linen.app
+
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []
+
+historical_surface:
+  note: >-
+    Recorded from Internet Archive captures for provenance only. None of these URLs resolve today —
+    they are deliberately NOT wired as apis.yml link-property pointers.
+  source: http://web.archive.org/cdx/search/cdx?url=linen.app&matchType=domain
+  hosts_seen:
+  - linen.app
+  - support.linen.app
+  - polygon.linen.app
+  - cdn.linen.app
+  - blog.linen.app
+  - content.linen.app
+  - learn.linen.app
+  - waitlist.linen.app
+  pages_seen:
+  - path: /faq
+    kind: support
+  - path: /bug-bounty
+    kind: vulnerability-disclosure
+  - path: /wallet-security/
+    kind: security-model
+  - path: /privacy-policy
+    kind: privacy
+  - path: /terms-of-use
+    kind: terms
+  - path: /articles
+    kind: blog
+  - path: /interest-rates/
+    kind: rates-dashboard
+  - path: /backers
+    kind: investors
+  - path: /for-developers-1/
+    kind: developer
+    note: >-
+      The only developer-facing page ever captured. Every capture returns
+      "This content is password protected" — an unpublished draft, never a public
+      developer portal. No public API, docs or spec was ever published on linen.app.
+  well_known_ever_captured:
+  - path: /.well-known/security.txt
+    archived_status: 404
+  - path: /.well-known/openid-configuration
+    archived_status: 404
+  - path: /.well-known/ai-plugin.json
+    archived_status: 404

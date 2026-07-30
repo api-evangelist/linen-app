@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: probed
+source: live fetch of /.well-known/* on every host resolvable for linen.app
+host: https://linen.app
+documents_found: 0
+note: >-
+  No .well-known document is served. Every path on linen.app returns a site-wide HTTP 301 to
+  https://x.com/GetLinen/status/1719361452186710050 (see lifecycle/linen-app-lifecycle.yml).
+  Internet Archive captures show these same paths returned 404 while the site was still live,
+  so Linen never published a .well-known discovery surface. This file is recorded for audit
+  provenance; no WellKnown / SecurityTxt pointer is wired into apis.yml because no document exists.
+documents:
+- path: /.well-known/security.txt
+  status: 301
+- path: /.well-known/openid-configuration
+  status: 301
+- path: /.well-known/oauth-authorization-server
+  status: 301
+- path: /.well-known/api-catalog
+  status: 301
+- path: /.well-known/ai-plugin.json
+  status: 301
+other_hosts:
+- host: https://support.linen.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
