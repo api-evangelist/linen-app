@@ -1,21 +1,51 @@
 aid: linen-app
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/linen-app.png
 name: Linen App
-description: 'Linen App is a company surfaced as a portfolio company of polychain and added to the API
-  Evangelist network as a stub for enrichment. Sector: wallet. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Linen Wallet, operated by Linen Mobile, Inc., was a mobile self-custody cryptocurrency wallet
+  that used multi-signature protection built on Safe (formerly Gnosis Safe) smart-contract accounts
+  instead of the single seed phrase used by most wallets. It began as a DeFi savings wallet earning
+  yield on stablecoins through Compound, later adding Ethereum staking and Polygon support, and grew
+  out of Bloqboard, a non-custodial digital-asset lending platform built on the Dharma, Compound and
+  MakerDAO protocols. Linen was backed by Polychain, Coinbase Ventures, HashKey and Wyre, and won
+  Aave and Polygon grants. The product is discontinued — since late 2023 every path on linen.app has
+  returned a site-wide redirect to a single X post, and no documentation, developer portal, API or
+  specification was ever published publicly. See lifecycle/linen-app-lifecycle.yml for the probed
+  wind-down evidence.
 url: https://raw.githubusercontent.com/api-evangelist/linen-app/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - polychain
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-public-api
+x-status: discontinued
+x-legal-entity: Linen Mobile, Inc.
+x-formerly: Bloqboard
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Wallet
+- Cryptocurrency
+- Ethereum
+- DeFi
+- Self Custody
+- Multisig
+- Blockchain
+- Discontinued
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +55,19 @@ maintainers:
 common:
 - type: Website
   url: https://linen.app
+- type: GitHubOrganization
+  url: https://github.com/linen-app
+- type: SourceCode
+  name: Bloqboard Lending Wallet
+  url: https://github.com/linen-app/bloqboard-lending-wallet
+- type: X
+  url: https://x.com/GetLinen
+- type: Lifecycle
+  url: lifecycle/linen-app-lifecycle.yml
+- type: DomainSecurity
+  url: security/linen-app-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
