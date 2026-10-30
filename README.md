@@ -64,6 +64,47 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Linen App is a company surfaced as a portfolio company of polychain and added to the API Evangelist network as a stub for enrichment. Sector: wallet. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: polychain — https://linen.app
+**Status:** discontinued
+
+Linen Wallet, operated by Linen Mobile, Inc., was a mobile self-custody cryptocurrency wallet that used multi-signature protection built on Safe (formerly Gnosis Safe) smart-contract accounts instead of the single seed phrase used by most wallets. It began as a DeFi savings wallet earning yield on stablecoins through Compound, later adding Ethereum staking and Polygon support, and grew out of Bloqboard, a non-custodial digital-asset lending platform built on the Dharma, Compound and MakerDAO protocols. Linen was backed by Polychain, Coinbase Ventures, HashKey and Wyre, and won Aave and Polygon grants. The product is discontinued — since late 2023 every path on linen.app has returned a site-wide redirect to a single X post, and no documentation, developer portal, API or specification was ever published publicly. See lifecycle/linen-app-lifecycle.yml for the probed wind-down evidence.
+
+**Areas:** Company · Wallets · Cryptocurrency · Ethereum · DeFi · Self-Custody · Multisig · Blockchain · Discontinued
+
+## Linen App on APIs.io (historical record)
+
+Everything profiled for Linen App is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/linen-app/](https://apis.io/providers/linen-app/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Linen App Domain Security](https://apis.io/security/linen-app/linen-app-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://linen.app)
+- [GitHub](https://github.com/linen-app)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Linen App: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/linen-app/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
